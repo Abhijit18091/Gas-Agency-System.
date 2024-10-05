@@ -1,0 +1,290 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border: 1px solid white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.nav-links :hover a {
+  color: rgb(226, 139, 107);
+  transition: 0.8 all ease-in-out os;
+}
+
+.user-actions {
+  margin-left: auto;
+}
+
+header {
+  box-shadow: 1px 1px 7px 1px red;
+}
+
+.section {
+  display: none;
+  background-color: #fff;
+  padding: 40px 0;
+  margin-top: 80px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section.active {
+  display: block;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #343a40;
+  color: #fff;
+  padding-bottom: 28px;
+}
+
+/* home page*/
+
+#home {
+  background-color: #007bff;
+}
+
+header {
+  background-color: #003f87;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header .logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+.main-content {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.main-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(177, 16, 16);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 2px white;
+}
+
+.button:hover {
+  background-color: orangered;
+}
+
+/*About As*/
+
+#about {
+  background-color: #007bff;
+}
+
+.main-content {
+  padding: 40px 20px;
+}
+
+.main-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.main-content h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.main-content ul {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+/*Booking Page*/
+
+#booking {
+  background-color: #007bff;
+}
+
+.main-content {
+  padding: 40px 20px;
+}
+
+.main-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #003f87;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(202, 44, 44, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(177, 16, 16);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 2px white;
+}
+
+form button:hover {
+  background-color: orangered;
+}
+
+#admin {
+  background-color: #007bff;
+}
+
+#customer-login {
+  background-color: #007bff;
+}
+
+#customer-register {
+  background-color: #007bff;
+}
+
+/*----- custom scrollbar-----*/
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: orangered;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(white, black);
+  border-radius: 10px;
+}

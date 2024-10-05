@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HP Gas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon.ico" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('booking')">Booking</a></li>
+          <li><a href="#" onclick="showPage('admin')">Admin Login</a></li>
+        </ul>
+        <div class="user-actions">
+          <ul class="nav-links">
+            <li>
+              <a href="#" class="btn" onclick="showPage('customer-login')"
+                >Customer Login</a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn" onclick="showPage('customer-register')"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Placeholder sections for demonstration -->
+    <section id="home" class="section active">
+      <div class="container">
+        <header>
+          <div class="container">
+            <img
+              src="https://justpostit.in/wp-content/uploads/bfi_thumb/hp-gas-p777p0hiy1yi46mz4udef6kljqex1m7q55gbuy9fcw.jpg"
+              alt="HP Gas Logo"
+              class="logo"
+            />
+            <h1>Welcome To <span style="color: red;">HP Gas</span></h1>
+          </div>
+        </header>
+
+        <section class="main-content">
+          <div class="container">
+            <p>
+              Welcome to HP Gas. We provide reliable and efficient gas services
+              for your home.
+            </p>
+            <br />
+            <p>
+              From fuelling kitchens extending across urban and rural landscapes
+              to delivering clean fuel to industries, all the while complying
+              with international standards of safety, HP Gas is aptly known as
+              ‘your friendly gas’, as it promptly responds to the call of duty
+              even in the most challenging times and continues Delivering
+              Happiness.
+            </p>
+            <a href="#" class="button">Get Started</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <section class="main-content">
+        <div class="container" style="color: white">
+          <h1>About <span style="color: darkblue;">HP Gas</span></h1>
+          <p style="font-size: 20px">
+            HP Gas is a leading provider of LPG (liquefied petroleum gas) in
+            India, catering to millions of households across the country.
+            Established with a commitment to safety, reliability, and customer
+            satisfaction, HP Gas has been a trusted name for over 40 years.
+          </p>
+          <p style="font-size: 20px">
+            Our mission is to deliver clean, safe, and efficient energy
+            solutions to every household, ensuring convenience and peace of mind
+            for our customers.
+          </p>
+          <h2>Our Vision</h2>
+          <p style="font-size: 20px">
+            To be the preferred choice for LPG in every household, driven by
+            innovation, sustainability, and excellence in service.
+          </p>
+          <h2>Our Values</h2>
+          <ul>
+            <li style="font-size: 20px; color: #000">Safety first</li>
+            <li style="font-size: 20px; color: #000">
+              Customer-centric approach
+            </li>
+            <li style="font-size: 20px; color: #000">
+              Integrity and transparency
+            </li>
+            <li style="font-size: 20px; color: #000">Continuous improvement</li>
+            <li style="font-size: 20px; color: #000">Sustainability</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+   <section id="booking" class="section">
+      <section class="main-content">
+        <div class="container" style="padding-top: 0%">
+          <h1 style="color: white">Gas Booking</h1>
+          <form id="bookingForm" onsubmit="submitForm(event)" autocomplete="off">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+
+            <label for="address">Address:</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="2"
+              placeholder="Address"
+              required
+            ></textarea>
+
+            <label for="mobile">Mobile Number:</label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder="Mobile Number"
+              required
+            />
+
+            <label for="regNo">Registration Number:</label>
+            <input
+              type="text"
+              id="regNo"
+              name="regNo"
+              placeholder="Gas Register Number"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <button type="submit" id="bookButton">Book Now</button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <section id="admin" class="section">
+      <div class="container">
+        <h2 style="text-align: center; color: white">Admin Login</h2>
+        <form id="adminLoginForm" autocomplete="off">
+          <label for="adminUsername">Username:</label>
+          <input
+            type="text"
+            id="adminUsername"
+            name="adminUsername"
+            placeholder="Username"
+            required
+          />
+          <label for="adminPassword">Password:</label>
+          <input
+            type="password"
+            id="adminPassword"
+            name="adminPassword"
+            placeholder="Password"
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="customer-login"  class="section">
+      <div class="container" >
+        <h2 style="text-align: center; color: white">Customer Login</h2>
+        <form id="customer">
+          <label for="customer">Username:</label>
+          <input
+            type="text" autocomplete="off"
+            id="customerUsername"
+            name="customerUsername"
+            placeholder="Username"
+            required
+          />
+          <label for="customerPassword">Password:</label>
+          <input
+            type="password"
+            id="Password"
+            name="customerPassword"
+            placeholder="Password"
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="customer-register" class="section">
+      <div class="container">
+        <h2 style="text-align: center; color: white">Customer Registration</h2>
+        <form id="customerRegisterForm" autocomplete="off">
+          <label for="customerFullname">Full Name:</label>
+          <input
+            type="text"
+            id="customerFullname"
+            name="customerFullname"
+            placeholder="Enter Your Fullname "
+            required
+          />
+          <label for="customerEmail">Email:</label>
+          <input
+            type="email"
+            id="customerEmail"
+            name="customerEmail"
+            placeholder="Enter Your Email"
+            required
+          />
+          <label for="customerPassword">Password:</label>
+          <input
+            type="password"
+            id="customerPassword2"
+            name="customerPassword"
+            placeholder="Create Your Password"
+            required
+          />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 HP Gas Agency. All rights reserved.</p>
+        <marquee
+          ><p style="padding-top: 10px; color: white; font-size: 15px">
+            Content on this website is Published and Managed by Hindustan
+            Petroleum Corporation Limited For any query regarding this website,
+            please contact the "Web Information Manager" Mr. Sudipto Basak
+            (Public Relations & Corporate Communications Department), Contact
+            No.: +91-22-22863900, +91-22-22008243 Email ID:
+            corphqo[at]hpcl[dot]in Best viewed on "Google chrome v 80+, Firefox
+            v 80+ and Microsoft edge". Site designed & developed by PECS.
+          </marquee
+        >
+      </div>
+    </footer>
+  </body>
+</html>
